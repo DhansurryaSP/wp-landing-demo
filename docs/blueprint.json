@@ -1,0 +1,26 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "meta": {
+    "title": "Kinetica Physio — WordPress landing page demo",
+    "author": "DhansurryaSP",
+    "description": "Self-initiated demo block theme for a fictional physiotherapy clinic."
+  },
+  "landingPage": "/",
+  "preferredVersions": { "php": "8.3", "wp": "latest" },
+  "features": { "networking": true },
+  "login": true,
+  "steps": [
+    {
+      "step": "installTheme",
+      "themeData": { "resource": "url", "url": "https://dhansurryasp.github.io/wp-landing-demo/kinetica-physio.zip" },
+      "options": { "activate": true }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "Kinetica Physio (Demo)",
+        "blogdescription": "Self-initiated WordPress demo by Dhansurrya S P"
+      }
+    }
+  ]
+}

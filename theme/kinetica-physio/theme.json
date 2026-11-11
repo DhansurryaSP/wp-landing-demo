@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": { "contentSize": "720px", "wideSize": "1200px" },
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        { "slug": "ink", "color": "#12302f", "name": "Ink" },
+        { "slug": "teal", "color": "#1f5f5b", "name": "Teal" },
+        { "slug": "coral", "color": "#e2674a", "name": "Coral" },
+        { "slug": "sand", "color": "#efe7db", "name": "Sand" },
+        { "slug": "paper", "color": "#fbf8f3", "name": "Paper" },
+        { "slug": "white", "color": "#ffffff", "name": "White" }
+      ]
+    },
+    "typography": {
+      "fluid": true,
+      "fontFamilies": [
+        { "slug": "display", "name": "Fraunces", "fontFamily": "\"Fraunces\", Georgia, serif" },
+        { "slug": "body", "name": "Inter", "fontFamily": "\"Inter\", system-ui, -apple-system, sans-serif" }
+      ]
+    },
+    "spacing": { "units": ["px", "rem", "%", "vw"] }
+  },
+  "styles": {
+    "color": { "background": "var(--wp--preset--color--paper)", "text": "var(--wp--preset--color--ink)" },
+    "typography": { "fontFamily": "var(--wp--preset--font-family--body)", "fontSize": "1.0625rem", "lineHeight": "1.65" },
+    "spacing": { "blockGap": "1.25rem" },
+    "elements": {
+      "heading": {
+        "typography": { "fontFamily": "var(--wp--preset--font-family--display)", "fontWeight": "500", "lineHeight": "1.12", "letterSpacing": "-0.01em" }
+      },
+      "link": { "color": { "text": "var(--wp--preset--color--teal)" } },
+      "button": {
+        "color": { "background": "var(--wp--preset--color--coral)", "text": "var(--wp--preset--color--white)" },
+        "typography": { "fontWeight": "600", "fontSize": "1rem" },
+        "border": { "radius": "999px" },
+        "spacing": { "padding": { "top": "0.85rem", "bottom": "0.85rem", "left": "1.6rem", "right": "1.6rem" } }
+      }
+    }
+  },
+  "templateParts": [
+    { "name": "header", "title": "Header", "area": "header" },
+    { "name": "footer", "title": "Footer", "area": "footer" }
+  ]
+}
