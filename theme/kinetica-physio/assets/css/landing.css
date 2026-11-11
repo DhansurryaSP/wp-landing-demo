@@ -179,6 +179,8 @@ body { -webkit-font-smoothing: antialiased; }
 .kp-faq p { margin: 0.75rem 0 0; color: rgba(18, 48, 47, 0.8); }
 
 /* Contact */
+.kp-form, .kp-form *, .kp-form *::before, .kp-form *::after { box-sizing: border-box; }
+.kp-form br { display: none; }
 .kp-contact__grid { gap: clamp(2rem, 5vw, 4rem); }
 .kp-contact h2 { font-size: clamp(2rem, 3.6vw, 3rem); margin-top: 0; }
 .kp-contact__details { list-style: none; padding: 0; margin-top: 1.5rem; }

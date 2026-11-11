@@ -9,7 +9,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'KP_VERSION', '1.0.0' );
+define( 'KP_VERSION', '1.0.1' );
 
 /**
  * Theme supports.
@@ -149,7 +149,8 @@ function kp_contact_form_shortcode() {
 		<button type="submit" class="kp-form__submit wp-element-button"><?php esc_html_e( 'Send enquiry', 'kinetica-physio' ); ?></button>
 	</form>
 	<?php
-	return ob_get_clean();
+	// Collapse whitespace between tags so wpautop cannot inject <br> or <p> into the form markup.
+	return preg_replace( '/>\s+</', '><', ob_get_clean() );
 }
 add_shortcode( 'kp_contact_form', 'kp_contact_form_shortcode' );
 
